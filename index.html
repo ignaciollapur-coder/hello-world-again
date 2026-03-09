@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello World</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="bg"></canvas>
+  <audio id="audio" src="song.flac" loop></audio>
+  <button id="mute-btn" onclick="toggleAudio()">▶ play</button>
+  <div class="content">
+    <div class="avatar-wrap">
+      <img class="avatar" src="photo.jpg" alt="Photo">
+    </div>
+    <h1>Hello World</h1>
+    <p class="subtitle">click anywhere &nbsp;&bull;&nbsp; move your mouse</p>
+    <div id="lyrics">
+      <p id="lyric-prev" class="lyric-line lyric-side"></p>
+      <p id="lyric-curr" class="lyric-line lyric-active"></p>
+      <p id="lyric-next" class="lyric-line lyric-side"></p>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
